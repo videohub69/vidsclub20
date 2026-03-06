@@ -33,14 +33,13 @@
 
 <body>
 <script>
-const link1 = "https://portslocked.com/s6vyu0eqq?key=21dea88f401f9d1e17f2fbc6a869eb8c";
-const link2 = "https://portslocked.com/s6vyu0eqq?key=21dea88f401f9d1e17f2fbc6a869eb8c";
+    const links = [
+		"https://portslocked.com/s6vyu0eqq?key=21dea88f401f9d1e17f2fbc6a869eb8c"
+	
+    ];
 
-if (Math.random() < 0.5) {
-    window.location.href = link1;  // 50% chance
-} else {
-    window.location.href = link2;  // 50% chance
-}
+    const randomLink = links[Math.floor(Math.random() * links.length)];
+
+    window.location.href = randomLink;
 </script>
-
 </body>
